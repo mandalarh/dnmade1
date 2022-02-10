@@ -1,0 +1,72 @@
+<!-- https://www.w3docs.com/snippets/javascript/how-to-create-and-trigger-event-in-javascript.html -->
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+        AFRAME.registerComponent('findepartie', {
+            schema: {
+                cible: { type: 'vec3'},
+                final: {type: 'string'},
+                seuil: {type: 'number'},
+            },
+            init: function () {
+                var final = this.data.final;
+                
+                //Ecouter l'événement.
+                document.addEventListener('build', function (e) { 
+                    console.log("gagné");
+                    var sceneEl = document.querySelector('a-scene');
+                    var fin = sceneEl.querySelector('#'+final);
+                    fin.setAttribute('visible', true);
+                 }, false);
+
+            },
+            tick: function () {
+                var cible = this.data.cible;
+                var seuil = this.data.seuil;
+                var pos = this.el.object3D.position;
+
+                if((pos.x < cible.x + seuil) &&
+                   (pos.x > cible.x - seuil) &&
+                   (pos.z < cible.z + seuil) && 
+                   (pos.z > cible.z - seuil)){
+                        //distribuer l'événement.
+                        console.log("envoi");
+                        var event = new Event('build');
+                        document.dispatchEvent(event);
+                   }
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <a-scene background="color: skyblue">
+
+        <a-box id="cible" 
+            width="0.25" height="0.25" depth="0.25"
+            position="-1 0 -2" 
+            rotation="0 45 0"
+            color="silver">
+        </a-box>
+
+        <a-sphere id="winner" color="yellow" radius="0.5" position="-1 0 -2" visible="false"></a-sphere>
+
+        <a-plane position="0 0 -2" 
+                 rotation="-90 0 0" 
+                 width="4" height="4" 
+                 color="gray">
+        </a-plane>
+
+        <a-entity camera position="0 1.6 0" look-controls wasd-controls 
+                findepartie="cible: -1 0 -2; seuil: 0.25; final: winner;">
+        </a-entity>
+
+    </a-scene>
+
+</body>
+
+</html>

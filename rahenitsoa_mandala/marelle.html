@@ -1,35 +1,30 @@
+
 <html>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/elbobo/aframe-multisrc-component/b6d23310/dist/0.3/aframe-multisrc-component.js"></script>
   </head>
   <body>
-    <a-scene background = > 
-      
+    <a-scene> 
+      <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 -2.5"></a-entity>
       <a-assets>
-        <img id="ciel" src ="back2.png">
-        <img id="first" src="void.png"> 
-        <img id="pierre" src="rocky.png">
-        <img id="illusion" src="crack.jpeg">
-        <img id="effet" src="goudron.jpg">
-        <img id="begin" src="debut.png">
-        <img id="then" src="turn.png">
-        <img id="end" src="msg.png">
-       
-        
-
+        <img id="ciel" src ="./assets/images/c.png">
+        <img id="turn" src="./assets/images/fleche.png"> 
+        <img id="illusion" src="./assets/images/noir.png">
+        <img id="effet" src="./assets/images/surface.png">
+        <img id="begin" src="./assets/images/way.png">
+        <img id="then" src="./assets/images/msg2.png">
+        <img id="end" src="./assets/images/fn.png">
       </a-assets>
 
       <a-sky src = #ciel ></a-sky>
 
-
-
-        <a-box   position="0 -1.5 -2.5"  
+        <a-box   position="0 -5 -2.5"  
                  rotation="180 0.3 0" 
                  width="0.5" 
-                 height="3" 
+                 height="10" 
                  depth = "0.5"
-                 multisrc="src3:#begin"></a-box>
+                 multisrc="srcs:#illusion,#illusion,#illusion,#begin,#illusion,#illusion"></a-box>
 
          <a-box  position="1 -0.1 -2.5"  
                  rotation="180 0.3 0" 
@@ -46,70 +41,68 @@
                  src =#effet></a-box>
 
         <a-box   
-                 position="1.25 -1.5 -3.4" 
+                 position="1.25 -5 -3.4" 
                  width="1" 
-                 height="3" 
+                 height="10" 
                  depth = "0.25"
-                 src="#first"></a-box>
+                 multisrc="srcs:#illusion,#illusion,#turn,#illusion,#illusion,#illusion"></a-box>
 
         <a-box   
-                 position="0.25 -1.5 -3.4" 
+                 position="0.25 -5 -3.4" 
                  width="0.25" 
-                 height="3" 
+                 height="10" 
                  depth = "0.25"
-                 src="#first"></a-box>
+                 src="#illusion"></a-box>
         
         <a-box   
-                 position="-0.3 -0.1 -3.4" 
-                 width="1" 
+                 position="-0.37 -0.1 -3.4" 
+                 width="0.99" 
                  height="0.2" 
                  depth = "0.1"
-                 src="#first"></a-box>
+                 src="#effet"></a-box>
         <a-box   
-                 position="-0.9 -1.5 -3.4" 
+                 position="-0.9 -5 -3.4" 
                  width="0.25" 
-                 height="3" 
+                 height="10" 
                  depth = "0.25"
-                 src="#first"></a-box>
-     
-        
+                 src="#illusion"></a-box>
 
         <a-box   
-                 position="-1.5 -1.5 -3.4" 
+                 position="-1.5 -5 -3.4" 
                  width="0.5" 
-                 height="3" 
+                 height="10" 
                  depth = "0.5"
-                 src = "#first" ></a-box>
+                 multisrc="srcs:#illusion,#illusion,#then,#illusion,#illusion,#illusion"></a-box>
         
         <a-cylinder position="-1.5 0 -4"
                  radius="0.27" 
                  height="0" 
-                 src="#pierre"></a-cylinder>
+                 src="#effet"></a-cylinder>
 
         <a-cylinder position="-0.75 0 -4.2"
                  radius="0.27" 
                  height="0" 
-                 src="#pierre"></a-cylinder>
+                 src="#effet"></a-cylinder>
 
         <a-cylinder 
                  position="-0.1 0 -4.3"
                  radius="0.24" 
                  height="0" 
-                 src="#pierre"></a-cylinder>
+                 src="#effet"></a-cylinder>
       
          <a-box   
-                position="0.65 -1.5 -4.3"  
+                position="0.65 -5 -4.3"  
                  rotation="180 0.3 0" 
                  width="0.5" 
-                 height="3" 
+                 height="10" 
                  depth = "0.5"
                  src="#effet"></a-box>
 
          <a-box   
-                 position="1.5 -1.5 -4.3"  
+                 position="1.5 -5 -4.3"  
                   rotation="180 0.3 0" 
                   width="0.5" 
-                  height="3" 
+                  height="10" 
                   depth = "0.5"
                   src="#effet"></a-box>
 
@@ -122,38 +115,38 @@
                  src="#effet"></a-box>
 
         
-          <a-box   position="1.5 -1.5 -5.62" 
+          <a-box   position="1.5 -5 -5.62" 
                  width="0.3" 
-                 height="3" 
+                 height="10" 
                  depth = "0.3"
-                 src = "#first"></a-box>
+                 src = "#effet"></a-box>
 
        
-          <a-cylinder position="0.75 -1.5 -5.59"
+          <a-cylinder position="0.75 -5 -5.59"
                     radius="0.23" 
-                    height="3" 
-                    src="#illusion"></a-cylinder>
+                    height="10" 
+                    multisrc="srcs:#illusion,#effet,#illusion,#effet,#illusion,#illusion"></a-cylinder>
 
-        <a-cylinder position="0.3 -1.5 -5.2"
+        <a-cylinder position="0.3 -5 -5.2"
                     radius="0.18" 
-                    height="3" 
-                    src="#illusion"></a-cylinder>
+                    height="10" 
+                    multisrc="srcs:#illusion,#effet,#illusion,#effet,#illusion,#illusion"></a-cylinder>
 
-        <a-cylinder position="-0.2 -1.5 -5.64"
+        <a-cylinder position="-0.2 -5 -5.64"
                     radius="0.15" 
-                    height="3" 
-                    src="#illusion"></a-cylinder>
+                    height="10" 
+                    multisrc="srcs:#illusion,#effet,#illusion,#effet,#illusion,#illusion"></a-cylinder>
 
-        <a-cylinder position="-0.6 -1.5 -5.4"
+        <a-cylinder position="-0.6 -5 -5.4"
                     radius="0.11" 
-                    height="3" 
-                    src="#illusion"></a-cylinder>
+                    height="10" 
+                    multisrc="srcs:#illusion,#effet,#illusion,#effet,#illusion,#illusion"></a-cylinder>
 
-        <a-box      position="-1.42 -1.5 -5.59" 
+        <a-box      position="-1.42 -5 -5.59" 
                     width="0.7" 
-                    height="3" 
+                    height="10" 
                     depth = "0.45"
-                    multisrc="src2:#end "></a-box>>
+                    multisrc="srcs:#illusion,#illusion,#end,#illusion,#illusion,#illusion"></a-box>>
 
                     
 
