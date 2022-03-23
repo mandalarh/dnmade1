@@ -6,3 +6,5 @@
  * [marelle pied_mains](./rahenitsoa_mandala/marelle_pieds-mains.html/) 
  
   * [marelle_pieds](./rahenitsoa_mandala/marelle_pieds.html/)
+  
+   * [marelleV2]./(rahenitsoa_mandala/marelleV2.html/) 
