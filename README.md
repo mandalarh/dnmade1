@@ -11,8 +11,8 @@
 
 ## Volumes architecturaux
 
-* [marelle](./rahenitsoa_mandala/interieur.html/) 
+* [interieur](./rahenitsoa_mandala/interieur.html/) 
 
- * [marelle pied_mains](./rahenitsoa_mandala/interieurbis.html/) 
+ * [interieurbis](./rahenitsoa_mandala/interieurbis.html/) 
  
-  * [marelle_pieds](./rahenitsoa_mandala/statique.html/)
+  * [statique](./rahenitsoa_mandala/statique.html/)
