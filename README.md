@@ -1,7 +1,7 @@
 # dnmade1
 
 ## marelles
-* [marelle](./rahenitsoa_mandala//marelle.html/) 
+* [marelle](./rahenitsoa_mandala/marelle.html/) 
 
  * [marelle pied_mains](./rahenitsoa_mandala/marelle_pieds-mains.html/) 
  
