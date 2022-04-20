@@ -11,8 +11,8 @@
 
 ## Volumes architecturaux
 
-* [interieur](./rahenitsoa_mandala/volume_archi/interieur.html/) 
+* [interieur](./volume_archi/interieur.html/) 
 
- * [interieurbis](./rahenitsoa_mandala/volume_archi/interieurbis.html/) 
+ * [interieurbis](./volume_archi/interieurbis.html/) 
  
-  * [statique](./rahenitsoa_mandala/volume_archi/statique.html/)
+  * [statique](./volume_archi/statique.html/)
