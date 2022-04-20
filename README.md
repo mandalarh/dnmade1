@@ -3,11 +3,11 @@
 ## marelles
 * [marelle](./rahenitsoa_mandala/marelle/marelle.html/) 
 
- * [marelle pied_mains](./rahenitsoa_mandala/marelle/marelle_pieds-mains.html/) 
+ * [marelle pied_mains](./rahenitsoa_mandala/marelle_pieds-mains.html/) 
  
-  * [marelle_pieds](./rahenitsoa_mandala/marelle/marelle_pieds.html/)
+  * [marelle_pieds](./rahenitsoa_mandala/marelle_pieds.html/)
   
-   * [marelleV2](./rahenitsoa_mandala/marelle/marelleV2.html/) 
+   * [marelleV2](./rahenitsoa_mandala/marelleV2.html/) 
 
 ## Volumes architecturaux
 
