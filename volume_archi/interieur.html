@@ -1,26 +1,24 @@
 <html>
-    
+
 <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 
 <body>
-    <a-scene background="color: black">
+    <a-scene background="color: #001C55"> =
            
         <a-assets>
             <a-asset-item id="agathe-obj" src="agathe.obj"></a-asset-item>
             <a-asset-item id="agathe-mtl" src="agathe.mtl"></a-asset-item>
         </a-assets>
 
-        <a-light type="point" ; intensity = 0.870; color="#FFA500" ; distance= 0.000; decay="1.000"; position= "0.239 8.564 -3.160 ">
-        </a-light>
-        <a-light type="point" ; intensity = 0.870; color="#002FA7" ; distance= 0.000; decay="1.000"; position= "0.239 8.564 -3.160 ">
-        </a-light>
-        <a-light type="spot" ; color="#F1C40F" angle = 180 intensity = 0 position="1.050 -10.410 -4.550" rotation = "0 0.290 0" animation="property: intensity; to: 10; dur: 10000; easing: linear; loop: true">
-        </a-light>
-        <a-entity obj-model="obj: #agathe-obj; mtl: #agathe-mtl" position="0 0 -4" scale="20 20 20"></a-entity>
-
+        <a-light type="point" intensity="0.5" color="#002FA7" distance="5" position="0 5 -5"></a-light>
+        
+        <a-entity obj-model="obj: #agathe-obj; mtl: #agathe-mtl" position="0 0 -4" scale="5 5 5" shadow="cast: true; receive: true"></a-entity> <!-- Ajustement de l'échelle et ajout d'ombres -->
 
     </a-scene>
 </body>
+
+</html>
+
 
