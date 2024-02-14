@@ -1,37 +1,26 @@
 <html>
-
+    
 <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 
 <body>
     <a-scene background="color: black">
-
-        <a-plane color="#2ECC71" rotation="-90 0 0" width="100" height="100"></a-plane>
-
+           
         <a-assets>
             <a-asset-item id="agathe-obj" src="agathe.obj"></a-asset-item>
             <a-asset-item id="agathe-mtl" src="agathe.mtl"></a-asset-item>
-            <!-- Charger une texture pour l'objet -->
-            <img id="texture" src="texture.jpg">
         </a-assets>
-        
-        <a-box position="-3 1 -5" rotation="0 45 0" color="#3498DB" scale="2 2 2"></a-box>
-        <a-sphere position="3 1 -5" radius="1.5" color="#E74C3C"></a-sphere>
 
-        <a-light type="point" intensity="1" color="#FFA500" position="5 5 -5"></a-light>
-        <a-light type="point" intensity="1" color="#002FA7" position="-5 5 -5"></a-light>
-        <a-light type="spot" color="#F1C40F" angle="180" intensity="1" position="1.050 -10.410 -4.550"
-            rotation="0 0.290 0" animation="property: intensity; to: 10; dur: 10000; easing: linear; loop: true">
+        <a-light type="point" ; intensity = 0.870; color="#FFA500" ; distance= 0.000; decay="1.000"; position= "0.239 8.564 -3.160 ">
         </a-light>
+        <a-light type="point" ; intensity = 0.870; color="#002FA7" ; distance= 0.000; decay="1.000"; position= "0.239 8.564 -3.160 ">
+        </a-light>
+        <a-light type="spot" ; color="#F1C40F" angle = 180 intensity = 0 position="1.050 -10.410 -4.550" rotation = "0 0.290 0" animation="property: intensity; to: 10; dur: 10000; easing: linear; loop: true">
+        </a-light>
+        <a-entity obj-model="obj: #agathe-obj; mtl: #agathe-mtl" position="0 0 -4" scale="20 20 20"></a-entity>
 
-        <a-entity obj-model="obj: #agathe-obj; mtl: #agathe-mtl" position="0 0 -4" scale="20 20 20"
-            material="src: #texture"></a-entity>
-        
-        <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"></a-entity>
 
     </a-scene>
 </body>
-
-</html>
 
